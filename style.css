@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  height: 100vh;
+  background-image: url(./images/bg-pattern-desktop.svg);
+  background-size: cover;
+}
+body .container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+body .container .image {
+  flex: 1;
+}
+body .container .image img {
+  width: 100%;
+}
+body .container .info {
+  flex: 1;
+  padding: 50px 100px;
+}
+body .container .info > img {
+  display: none;
+}
+body .container .info h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-right: 150px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: hsl(0, 6%, 24%);
+}
+body .container .info h1 span {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+body .container .info p {
+  margin: 20px 60px 20px 0;
+  line-height: 1.6;
+  color: hsl(0, 36%, 70%);
+}
+body .container .info form {
+  position: relative;
+  margin-right: 60px;
+}
+body .container .info form input {
+  width: 350px;
+  padding: 15px 10px 15px 30px;
+  border: 1px solid hsl(0, 0%, 81%);
+  border-radius: 25px;
+  outline: none;
+}
+body .container .info form input::-moz-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 6%, 24%);
+  font-weight: 300;
+  font-size: 15px;
+}
+body .container .info form input::placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 6%, 24%);
+  font-weight: 300;
+  font-size: 15px;
+}
+body .container .info form button {
+  position: absolute;
+  height: 100%;
+  padding: 0px 35px;
+  border-radius: 30px;
+  border: none;
+  background-image: linear-gradient(to right, hsl(0, 80%, 86%) 50%, hsl(0, 74%, 74%));
+  left: 300px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+body .container .info form button:hover {
+  box-shadow: 0px 0px 3px 2px hsl(0, 36%, 70%);
+}
+body .container .info form > img {
+  position: absolute;
+  left: 260px;
+  top: 25%;
+  display: none;
+}
+body .container .info form .error {
+  position: absolute;
+  left: 32px;
+  bottom: -20px;
+  font-size: 14px;
+  color: hsl(0, 93%, 68%);
+  display: none;
+}
+
+@media (max-width: 700px) {
+  body {
+    background-image: linear-gradient(to right, hsl(0, 0%, 100%) 50%, hsl(0, 100%, 98%)) !important;
+    background-size: cover;
+  }
+  body .container {
+    flex-direction: column;
+  }
+  body .container .info {
+    padding: 0 0 50px 0 !important;
+  }
+  body .container .info .logo {
+    padding: 20px 0 20px 30px;
+  }
+  body .container .info .logo img {
+    width: 100px;
+  }
+  body .container .info > img {
+    display: block;
+    width: 100%;
+  }
+  body .container .info h1 {
+    margin: 40px 15px !important;
+    font-size: 40px !important;
+    text-align: center;
+  }
+  body .container .info p {
+    margin: 10px 20px !important;
+    text-align: center;
+  }
+  body .container .info form {
+    margin: 10px auto !important;
+    width: 100%;
+  }
+  body .container .info form input {
+    width: 80% !important;
+    margin-left: 10%;
+  }
+  body .container .info form button {
+    left: calc(80% - 20px) !important;
+  }
+  body .container .info form > img {
+    left: 65% !important;
+  }
+  body .container .info form .error {
+    left: 15% !important;
+  }
+  body .container .image {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
